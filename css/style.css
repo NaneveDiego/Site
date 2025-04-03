@@ -55,7 +55,6 @@ header {
 }
 
 
-
 .sobrecontent {
   display: flex;
   justify-content: center;
@@ -63,7 +62,7 @@ header {
 }
 
 .perfil {
-  width: 40vw;
+  width: 30vw;
 }
 
 .texto {
@@ -77,7 +76,24 @@ header {
 
 .texto .descricao {
   width: 70%;
+
 }
+
+.texto .descricao p{
+  overflow: hidden;
+  max-height: 320px;
+  font-size: 1.2rem;
+}
+
+.tecContent{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+
+
+
 
 /* Carreira */
 
@@ -85,6 +101,7 @@ header {
   padding: 2%;
   height: 70vh;
   background-color: var(--black);
+  font-size: 1.4rem;
 }
 
 .carreiraContent{
@@ -104,14 +121,19 @@ header {
   color: var(--white);
   display: flex;
   gap: 7%;
-  padding: 10%;
+  padding: 5%;
 
+}
+
+.ano{
+ text-wrap:nowrap;
 }
 
 .expText{
   display: flex;
   flex-direction: column;
 }
+
 
 
 
@@ -158,14 +180,20 @@ header {
   transition: 0.8s;
 }
 
-.projeto img {
-  height: 100px;
+
+
+
+.tituloProjeto{
+  color: var(--green);
+  font-size: 2rem;
 }
 
-.projeto p {
+.textoProjeto{
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
+
 
 .projeto a {
   color: var(--black);
